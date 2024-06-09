@@ -2,7 +2,7 @@
 
 ## Overview
 
-The purpose of this analysis is to detect any fraudulent transcations in cardholders for a bank. The first part of the analysis will focus on analyzing series of transactions over the course of a year for two cardholders. Visuals will be used to observe any consumption patterns to determine any fraudulent transactions. The second part of the analysis will involve a specific cardholder who suspects someone has used her corporate credit card with authorization. Time series analysis will be used to determine any outliers in charges to determine if indeed someone used her card for expensive restaurants.
+The purpose of this analysis is to detect any fraudulent transcations in cardholders for a bank. The first part of the analysis will focus on analyzing series of transactions over the course of a year for two cardholders. Visuals will be used to observe any consumption patterns to determine any fraudulent transactions. The second part of the analysis will involve a specific cardholder who suspects someone has used her corporate credit card without authorization. Time series analysis will be used to determine any outliers in charges to determine if indeed someone used her card for expensive restaurants.
 
 ## Data Source
 
@@ -10,7 +10,7 @@ The data originates from a Postgres SQL database. Six different datasets were us
 
 ## Data Exploration
 
-The Sqlalchemy library was used to establish a connections and query data from the database in Postgres SQL to the Jupyter Notebook. The Pandas library was then used to organize the imported data into DataFrames. Last but not least, Hvplot was used to create visualizations for observing patterns of fraudulent transactions.
+The Sqlalchemy library was used to establish a connection and query data from the database in Postgres SQL to the Jupyter Notebook. The Pandas library was then used to organize the imported data into DataFrames. Last but not least, Hvplot was used to create visualizations for observing patterns of fraudulent transactions.
 
 ## Data Analysis #1
 
@@ -45,7 +45,7 @@ A box plot was generated for each month to visualize the spread of transactions.
 
 ![bokeh_plot (7)](https://github.com/eduardo20calvo/SQL_Suspicious_Transactions/assets/104874384/7c888b23-7f74-4f0c-a375-03fc460a4684)
 
-Based on our findings, there are clearly outliers in every single month except February. These outliers suggest that someone indeed used the cardholders credit card to pay for expensive meals for those monnths. As can be seen in the February plot, the spread of the transactions is tighter from $1 to $18. 
+Based on our findings, there are clearly outliers in every single month except February. These outliers suggest that someone indeed used the cardholders credit card to pay for expensive meals for those months. As can be seen in the February plot, the spread of the transactions is tighter from $1 to $18. 
 
 ## Conclusion
 
